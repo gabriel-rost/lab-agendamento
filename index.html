@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento de Laboratório</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Agendamento de Laboratório</h1>
+    
+    <!-- Formulário de Agendamento -->
+    <form id="agendamentoForm">
+      <label for="professor">Professor:</label>
+      <input type="text" id="professor" name="professor" required>
+
+      <label for="turma">Turma:</label>
+      <input type="text" id="turma" name="turma" required>
+
+      <label for="atividade">Atividade:</label>
+      <input type="text" id="atividade" name="atividade" required>
+
+      <label for="data">Data:</label>
+      <input type="date" id="data" name="data" required>
+
+      <label for="horario">Horário:</label>
+      <input type="time" id="horario" name="horario" required>
+
+      <label for="observacoes">Observações:</label>
+      <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+
+      <button type="submit">Agendar</button>
+    </form>
+
+    <!-- Tabela de Agendamentos (Google Sheets incorporado) -->
+    <div style="margin-top: 50px;">
+      <h2>Agendamentos Registrados</h2>
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTLEXtucPDj9TTgaBcrdFrQry3h5xn76FcQXLxvyfnhaxxAvFQ5drlBQOQ4akRcBqx3WXLpEjVB7wqy/pubhtml"
+              width="100%" 
+              height="500"></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
