@@ -15,7 +15,7 @@ document.getElementById('agendamentoForm').addEventListener('submit', function (
   }
 
   // Envia os dados para o Google Sheets
-  const url = 'https://script.google.com/macros/s/AKfycbwezd-XBWlOQJclAka21lv18YS0VY2H8YngQNxwyj0-qFylz8nssskhP0cMasJHmJQT/exec'; // Cole aqui o URL do seu Google Apps Script
+  const url = 'https://script.google.com/macros/s/AKfycbxNHhbpOhpQSMpgOPAtr4i4xtBp-hmgIE3UG9NKO9acJ2a8CmfzAScZKqNWNAj_kc3t/exec'; // Cole aqui o URL do seu Google Apps Script
   const params = new URLSearchParams();
   params.append('professor', professor);
   params.append('turma', turma);
